@@ -4,20 +4,15 @@ description: Keep Mona's GitHub Info content current with practical, sourced upd
 on:
   schedule: daily
   workflow_dispatch:
-
 permissions:
   contents: read
-
 tools:
   edit:
-  web-fetch:
-
 network:
   allowed:
     - github.blog
     - github.com
     - awesome-copilot.github.com
-
 safe-outputs:
   create-pull-request:
     max: 1
